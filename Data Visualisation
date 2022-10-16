@@ -1,0 +1,14 @@
+# Create a grid of 16 images along with their corresponding labels
+L = 4
+W = 4
+
+fig, axes = plt.subplots(L, W, figsize = (12, 12))
+axes = axes.ravel()
+
+for i in np.arange(0, L*W):
+    axes[i].imshow(train_images[i])
+    axes[i].set_title(label_names[np.argmax(train_labels[i])])
+    axes[i].axis('off')
+    
+
+plt.subplots_adjust(wspace = 0.5) 
