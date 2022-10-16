@@ -1,0 +1,7 @@
+headmodel = basemodel.output
+headmodel = AveragePooling2D(pool_size = (4,4))(headmodel)
+headmodel = Flatten(name = 'flatten')(headmodel)
+headmodel = Dense(256, activation = 'relu')(headmodel)
+headmodel = Dropout(0.3)(headmodel)
+
+model = Model(inputs = basemodel.input, outputs = headmodel)
