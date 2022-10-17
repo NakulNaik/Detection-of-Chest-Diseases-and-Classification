@@ -15,5 +15,5 @@ Firstly, the necessary libraries are imported. Classic python libraries such as 
 along with Tensoflow and Keras libraries as well. Further, a batch of 40 images are imported from the directory and are rescaled, normalised, shuffled, and arranged 
 into a one-hot 2D array. Following this, the image labels are assigned to particular disease. 
 
-After this, data is visualized where using matplotlib where each image is treated as a subplot with their corresponding labels. The model is then imported where the 
+After this, data is visualized using matplotlib where each image is treated as a subplot with their corresponding labels. The model is then imported where the 
 top layers are excluded (which will further be trained separately). 
